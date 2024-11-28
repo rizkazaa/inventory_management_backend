@@ -6,7 +6,7 @@ dotenv.config();
 
 
 // const PORT = process.env.PORT;
-const PORT = 3000;
+// const PORT = 3000;
 
 app.use(express.json());
 app.use(cors());
@@ -32,6 +32,8 @@ app.use("/api/items", itemController);
 app.use("/api/transactions", transactionController);
 
 
-app.listen(PORT, () => {
-    console.log('App listening on port ', + PORT)
-});
+export default app
+
+// app.listen(PORT, () => {
+//     console.log('App listening on port ', + PORT)
+// });

@@ -4,10 +4,8 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "build" : "prisma generate && nodemon app.js",
-    "postinstall": "prisma generate",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "vercel-build": "prisma generate"
   },
   "author": "",
   "license": "ISC",
